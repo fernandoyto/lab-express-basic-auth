@@ -1,0 +1,9 @@
+<form action="/signup" method="POST">
+  <input type="text" name="username" placeholder="Insert Username">
+  <input type="password" name="password" placeholder="Insert Password">
+  <button type="submit">Signup</button>
+</form>
+
+{{#if errorMessage}}
+  <p>{{errorMessage}}</p>
+{{/if}}
